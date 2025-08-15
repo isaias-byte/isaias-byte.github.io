@@ -1,0 +1,10 @@
+{
+  "name": "keli-flowers",
+  "dependencies": {
+    "sass": "^1.90.0"
+  },
+  "scripts": {
+            "scss-compile": "sass src/styles.scss:public/styles.css",
+            "scss-watch": "sass --watch src/styles.scss:public/styles.css"
+  }
+}
