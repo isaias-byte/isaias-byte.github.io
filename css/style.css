@@ -1343,7 +1343,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
 .program_bg_1 {
-  background-image: url(../img/program_details/1.png);
+  background-image: url(../img/program_details/1.JPG);
 }
 
 /* line 4, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
@@ -1746,8 +1746,8 @@ h3 {
 
 /* line 78, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_story.scss */
 .love_story_area .weding_time_line .single_time_line {
-  padding-bottom: 48px;
-  padding-top: 45px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   position: relative;
 }
 
