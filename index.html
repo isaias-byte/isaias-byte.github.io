@@ -337,8 +337,28 @@
                                             <p>Por favor responder antes del 1 de diciembre</p>
                                         </div>
                                         
-                                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfoUYe4wIR_vQq965W90pGU-FEI1YTFeRzONC-bVP8IMtj56w/viewform?embedded=true" width="360" height="420" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-
+                                        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfoUYe4wIR_vQq965W90pGU-FEI1YTFeRzONC-bVP8IMtj56w/viewform?embedded=true" width="360" height="420" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe> -->
+                                        
+                                        <form id="form">
+                                            <div class="row">
+                                                <div class="col-xl-12">
+                                                    <input type="text" placeholder="Nombre" id="name" name="name" required>
+                                                </div>                                                
+                                                <div class="col-xl-12">                                                    
+                                                    <input 
+                                                    type="number" id="guests" name="guests" min="1" max="10" required 
+                                                    placeholder="Ej: 2 invitados">
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <textarea placeholder="Mensaje adicional" id="message" name="message"></textarea>
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <button type="submit" class="boxed_btn3">Enviar</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        
+                                        <div id="response"></div>
                                     </div>
                                 </div>
                             </div>
@@ -447,6 +467,56 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             ));
         });
     </script>
+
+    <script>
+        const scriptURL = "https://script.google.com/macros/s/AKfycbw8p8HdNSbhFggeqMPyLf16wTPw_3pFuWkGMWsPA9zF6JCSbQknwZVunfVsmrCaAoOCVQ/exec"; 
+        const form = document.getElementById("form");
+        const response = document.getElementById("response");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const data = {
+                name: form.name.value,
+                guests: form.guests.value,
+                message: form.message.value
+            };
+
+            if (!data.name) {
+                response.textContent = "❌ Por favor ingresa tu nombre.";
+                return;
+            }
+
+            if (!data.guests || isNaN(data.guests) || data.guests < 1 || data.guests > 10) {
+                response.textContent = "❌ Por favor ingresa un número válido de invitados (1-10).";
+                return;
+            }
+
+            fetch(scriptURL, {
+                method: "POST",
+                body: JSON.stringify(data)
+            })
+            .then(res => res.json())
+            .then(res => {
+                response.textContent = "✅ ¡Gracias! Tu respuesta se ha guardado.";
+                form.reset();
+
+                setTimeout(() => {
+                    response.textContent = "";
+                }, 4000);
+            })
+            .catch(err => {
+                response.textContent = "❌ Error. Por favor intenta de nuevo.";
+                console.error(err);
+
+                setTimeout(() => {
+                    response.textContent = "";
+                }, 4000);
+            });
+        });
+    </script>
+
+
     <script>
         function initMap() {
             var uluru = {
