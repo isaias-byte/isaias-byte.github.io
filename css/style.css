@@ -54,7 +54,7 @@ a:focus,
 
 /* line 28, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/theme-default.scss */
 a:focus {
-  color: #fff;
+  /* color: #fff; */
   text-decoration: none;
 }
 
