@@ -346,7 +346,7 @@
                                                 <div class="col-xl-12">                                                    
                                                     <input 
                                                     type="number" id="guests" name="guests" min="1" max="10" required 
-                                                    placeholder="Ej: 2 invitados">
+                                                    placeholder="Número de invitados (incluyéndote a ti)" >
                                                 </div>
                                                 <div class="col-xl-12">
                                                     <textarea placeholder="Mensaje adicional" id="message" name="message"></textarea>
@@ -491,14 +491,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 return;
             }
 
+            response.textContent = "⏳ El formulario se está enviando, por favor espera unos segundos...";
+
             fetch(scriptURL, {
                 method: "POST",
                 body: JSON.stringify(data)
             })
             .then(res => res.json())
             .then(res => {
-                response.textContent = "✅ ¡Gracias! Tu respuesta se ha guardado.";
                 form.reset();
+                response.textContent = "✅ ¡Gracias! Tu respuesta se ha guardado.";                
 
                 setTimeout(() => {
                     response.textContent = "";
