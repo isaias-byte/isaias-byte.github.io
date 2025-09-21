@@ -406,7 +406,7 @@ h3 {
 
 /* line 54, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_btn.scss */
 .boxed_btn3:hover {
-  background: #FAF0F0;
+  background: #ebe1ff;
   color: #8a69cc;
 }
 
@@ -2021,7 +2021,8 @@ h3 {
 
 /* line 17, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_footer.scss */
 .footer .footer_top ul li a:hover {
-  color: #C78665;
+  color: #8f58fd;
+  /* background: #ebe1ff; */
 }
 
 /* line 24, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_footer.scss */
