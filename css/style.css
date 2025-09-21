@@ -1053,12 +1053,14 @@ h3 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  background: #C3B9D7;
+  
   padding: 106px 45px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
   z-index: 10;
+
+  background: #C3B9D7;
 }
 
 @media (max-width: 767px) {
@@ -1100,16 +1102,43 @@ h3 {
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 37, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
   .slider_area_inner .slider_text {
-    transform: rotate(0deg);
-    transform: translateX(-50%) translateY(-50%) rotate(0deg);
-    padding: 70px 25px;
+    transform: translate(0%, -50%) rotate(0deg);
+    padding: 35px 25px;
+    left: 0;
+    padding: 35px 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 70%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@media (min-width: 1201px) {
+  /* line 37, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
+  .slider_area_inner .slider_text {
+    transform: translate(0%, -50%) rotate(0deg);
+    padding: 35px 25px;
+    left: 0;
+    padding: 65px 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 70%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 300px;
+    height: 300px;
   }
 }
 
 /* line 90, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_area_inner .slider_text .text_inner {
-  position: relative;
-  transform: rotate(-45deg);
+  /* position: relative; */
+  transform: rotate(0deg);
 }
 
 @media (max-width: 767px) {
@@ -1142,14 +1171,21 @@ h3 {
   margin-top: 5px;
 }
 
+@font-face {
+  font-family: 'Sephir';
+  src: url('../fonts/sephir.otf') format('opentype');       
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* line 113, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_area_inner .slider_text h3 {
   font-size: 36px;
-  font-family: "Petit Formal Script", cursive;
+  font-family: 'Sephir', cursive;
   font-weight: 400;
   color: #fff;
   line-height: 46px;
-  margin-bottom: 36px;
+  margin-bottom: 21px;
   margin-top: 23px;
 }
 
@@ -1180,7 +1216,7 @@ h3 {
 /* line 138, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_area_inner .slider_text span {
   font-size: 18px;
-  font-family: "Petit Formal Script", cursive;
+  font-family: 'Sephir', cursive;
   font-weight: 400;
   color: #fff;
 }
