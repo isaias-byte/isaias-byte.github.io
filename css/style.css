@@ -392,7 +392,7 @@ h3 {
 
 /* line 46, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_btn.scss */
 .boxed_btn3 {
-  background: #C78665;
+  background: #8a69cc;
   padding: 9px 26px;
   margin-bottom: 0;
   font-size: 20px;
@@ -407,7 +407,7 @@ h3 {
 /* line 54, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_btn.scss */
 .boxed_btn3:hover {
   background: #FAF0F0;
-  color: #C78665;
+  color: #8a69cc;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -498,7 +498,7 @@ h3 {
   font-size: 18px;
   font-weight: 400;
   font-family: "Muli", sans-serif;
-  color: #C78665;
+  color: #6784B6;
   display: block;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -507,6 +507,7 @@ h3 {
 /* line 18, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_section_title.scss */
 .section_title h3 {
   font-size: 36px;
+  color: #174291;
   font-family: "Muli", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -1052,7 +1053,7 @@ h3 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  background: #C78665;
+  background: #C3B9D7;
   padding: 106px 45px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1193,7 +1194,7 @@ h3 {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 1px solid #C78665;
+  border: 1px solid #9295b7;
   top: -30px;
   left: -20px;
   z-index: -3;
@@ -1229,7 +1230,7 @@ h3 {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 1px solid #F2C64D;
+  border: 1px solid #90b1cf;
   top: -30px;
   left: -40px;
   z-index: -3;
@@ -1323,7 +1324,7 @@ h3 {
   font-size: 60px;
   font-family: "Petit Formal Script", cursive;
   font-weight: 400;
-  color: #C78665;
+  color: #0f3f99;
   margin-bottom: 17px;
 }
 
@@ -1339,6 +1340,7 @@ h3 {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
+  color: #6784B6;
 }
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
@@ -1381,6 +1383,7 @@ h3 {
   font-size: 20px;
   font-weight: 400;
   font-family: "Petit Formal Script", cursive;
+  color: #2A3B5A;
 }
 
 /* line 27, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
@@ -1389,7 +1392,7 @@ h3 {
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  color: #C78665;
+  color: #7f58ce;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1398,6 +1401,10 @@ h3 {
 .program_details_area .single_program .program_inner p {
   font-size: 16px;
   font-family: "Muli", sans-serif;
+}
+
+.program_details_area .single_program .program_inner a {
+  color: #9d7fdb;
 }
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_attending.scss */
@@ -1483,7 +1490,7 @@ h3 {
 .attending_area .main_attending_area .popup_box h3 {
   text-align: center;
   font-size: 36px;
-  color: #C78665;
+  color: #174291;
 }
 
 @media (max-width: 767px) {
@@ -1683,12 +1690,17 @@ h3 {
   margin-top: 33px;
   display: block;
   margin-bottom: 11px;
+  color: #303bb4;
+}
+
+.love_story_area .single_lover_story b {
+  color: #303bb4;
 }
 
 /* line 37, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_story.scss */
 .love_story_area .single_lover_story h3 {
   font-size: 36px;
-  color: #C78665;
+  color: #a782cc;
 }
 
 @media (max-width: 767px) {
@@ -1934,7 +1946,7 @@ h3 {
 .location_area .location_info .location_inner h3 {
   font-size: 36px;
   font-weight: 400;
-  color: #C78665;
+  color: #174291;
 }
 
 /* line 43, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_location.scss */
@@ -1961,7 +1973,7 @@ h3 {
 
 /* line 59, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_location.scss */
 .location_area .location_info .location_inner .address_info .single_address h4 {
-  color: #C78665;
+  color: #d085e7;
   font-size: 16px;
   font-family: "Muli", sans-serif;
   font-weight: 600;
@@ -1978,7 +1990,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_footer.scss */
 .footer {
-  background: #FFFAF2;
+  background: #f3e4f8;
 }
 
 /* line 3, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_footer.scss */
