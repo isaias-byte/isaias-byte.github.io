@@ -1373,10 +1373,11 @@ h3 {
 
 /* line 49, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_wedding_counter.scss */
 .weeding_countdown_area .countdown_area .countdown_wrap .single_countdown span {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 400;
   text-transform: uppercase;
   color: #6784B6;
+  font-family: 'Sephir', cursive;
 }
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
@@ -1418,7 +1419,7 @@ h3 {
 .program_details_area .single_program .program_inner span {
   font-size: 20px;
   font-weight: 400;
-  font-family: "Petit Formal Script", cursive;
+  font-family: 'Sephir', cursive;
   color: #2A3B5A;
 }
 
@@ -1527,6 +1528,7 @@ h3 {
   text-align: center;
   font-size: 36px;
   color: #174291;
+  font-family: "Muli", sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -1727,22 +1729,26 @@ h3 {
   display: block;
   margin-bottom: 11px;
   color: #303bb4;
+  font-family: 'Sephir', cursive;
 }
 
 .love_story_area .single_lover_story b {
   color: #303bb4;
+  font-size: 19px;
 }
 
 /* line 37, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_story.scss */
 .love_story_area .single_lover_story h3 {
   font-size: 36px;
   color: #a782cc;
+  font-family: 'Sephir', cursive;
 }
 
 @media (max-width: 767px) {
   /* line 37, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_story.scss */
   .love_story_area .single_lover_story h3 {
     font-size: 30px;
+    font-family: 'Sephir', cursive;
   }
 }
 
@@ -1750,8 +1756,9 @@ h3 {
 .love_story_area .single_lover_story p {
   margin-top: 30px;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
+  font-family: 'Sephir', cursive;
 }
 
 /* line 50, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_story.scss */
@@ -1983,6 +1990,7 @@ h3 {
   font-size: 36px;
   font-weight: 400;
   color: #174291;
+  font-family: 'Sephir', cursive;
 }
 
 /* line 43, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_location.scss */
