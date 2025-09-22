@@ -1886,6 +1886,7 @@ h3 {
 .gallery_area {
   padding: 0 50px;
   padding-top: 90px;
+  padding-right: 40px;
 }
 
 @media (max-width: 767px) {
